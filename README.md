@@ -34,3 +34,29 @@ functions:
           method: get
 
 ````
+
+- Handler 
+
+```
+'use strict';
+module.exports.createUser = async (event, context) => {
+  return {
+    statusCode: 200,
+    body: JSON.stringify({
+      message: 'Create user!'
+      //input: event,
+    }),
+  };
+};
+
+
+module.exports.getUser = async (event, context) => {
+  return {
+    statusCode: 200,
+    body: JSON.stringify({
+      message: 'Get User!'
+      //input: event,
+    }),
+  };
+};
+```
